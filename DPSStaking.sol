@@ -103,7 +103,7 @@ contract DPSStaking is Ownable, IERC721Receiver {
         }
 
         if (earned > 0) {
-            earned = earned / 10000;
+            earned = earned / 10;
             token.mint(account, earned);
         }
 
